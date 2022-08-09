@@ -1,0 +1,67 @@
+@import "variables.scss";
+
+.Hero_Container{
+    height:100vh;width:100vw;max-width: 100%;background-color: #DFEFEB;
+}
+
+.Hero_Header{
+    display:flex;flex-direction:row;justify-content:space-between;align-items: center;
+}
+.logo{
+    width:8rem;height:8rem;
+}
+.Hero_sayHi{
+    border:1px solid $primaryColor;width:5rem;height:2rem;display:flex;align-items:center;justify-content: center;
+    border-radius: 9999px;cursor:pointer;transition:all .5s;
+    &_text{
+        color:$primaryColor;font-family:eurostile, sans-serif;
+    };
+    &:hover{
+        background-color: $primaryColor;
+        .Hero_sayHi_text{
+            color:white
+        }
+    }
+}
+.Hero_Body_first{
+    display:flex;flex-direction: row;
+}
+.Hero_Body{
+    display:flex;flex-direction: column;width:100vw;align-items: center;padding-top:8rem;
+    &_text{
+        font-size:3.2rem;    display:flex;flex-direction: row;align-items: center;justify-content:center;
+        font-family:eurostile, sans-serif;
+    }
+    &_Name{
+        font-size:3.2rem;color:$primaryColor;font-family:eurostile, sans-serif;
+    }
+    &_secondtext{
+        margin-top:-5rem;font-size:3.2rem;font-family:eurostile, sans-serif;
+    }
+}
+
+.Btn_Gettoknow{
+    border:3px solid $primaryColor;width:20rem;height:5rem;display:flex;flex-direction:column;align-items: center;justify-content: center;
+    cursor:pointer;transition:all .3s;
+    &:hover{
+        background-color: $primaryColor;
+        .Btn_Gettoknow_text{
+            color:white
+        };
+        .right_arrow{
+            transform:rotate(180deg);opacity:0;
+        };
+        .down_arrow{
+            transform:rotate(0deg);opacity:1;color:white;
+        }
+    }
+}
+.Btn_Gettoknow_text{
+    margin-right:0.5rem;font-size:2rem;font-family:eurostile, sans-serif;
+}
+.right_arrow{
+    opacity:1;transition:all .3s;position:absolute;display:block;margin-left:8rem;width:2rem;height:2rem
+}
+.down_arrow{
+    opacity:0;transition:all .3s;transform:rotate(-180deg);position:absolute;display:block;margin-left:8rem;size:2rem;width:2rem;height:2rem
+}

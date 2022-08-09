@@ -1,0 +1,38 @@
+@import "./variables.scss";
+.ReactModal__Overlay {
+    opacity:0;
+    transition: all 0.3s ease-in-out;
+}
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.content-container{
+    height:39rem;width:21rem;display:flex;align-items: center;flex-direction: column;
+    align-self: center;
+}
+
+.content-img{
+    height:9rem;width:20rem;border:1px soid red;
+}
+
+.content-work{
+    min-width:20rem;min-height:5rem;max-width:40rem;font-family:eurostile, sans-serif;
+}
+.what_i_did{
+    text-decoration: underline;
+}
+.modal_button{
+    border:1px solid $primaryColor;border-radius: 1rem;width:5rem;height:2rem;display:flex;align-items: center;
+    justify-content: center;cursor:pointer;transition:all .3s;
+    &:hover{
+        background-color: $primaryColor;
+        .modal_button_text{
+            color:white;
+        }
+    }
+}
