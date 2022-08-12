@@ -3,7 +3,7 @@ import "./styles/description.scss";
 import Thaung from "../assets/images/thaung.jpg"
 const Description = () => {
     return(
-        <div className="desc_container">
+        <div id="description" className="desc_container">
             <img src={Thaung} className="my_pic" />
             <p className="desc_text">
                 As a hardworking and ambitious individual, I have been working remotely for startups and businesses which need their products

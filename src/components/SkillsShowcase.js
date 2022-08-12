@@ -36,7 +36,7 @@ const SkillsShowcase = () => {
                     <p className="skill_item_title">Tools</p>
                     <div className="skill_item_skills">
                         <SkillsCards image={react} text="React"/>
-                        <SkillsCards image={reactnative} text="React Native"/>
+                        <SkillsCards image={reactnative} text="ReactNative"/>
                         <SkillsCards image={laravel} text="Laravel"/>
                         <SkillsCards image={firebase} text="Firebase"/>
                         <SkillsCards image={design} text="Adobe XD"/>

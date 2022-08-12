@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+.footer-container{
+    height:20rem;width:100vw;max-width: 100%;display:flex;background-color: #1b242f;
+}
+.footer-body{
+    width:100rem;height:10rem;align-self:center;margin:0 auto;display:flex;flex-direction: column;
+}
+.socialmedia_container{
+    display:flex;width:20rem;margin:0 auto;flex-direction: row;justify-content: space-between;
+}
+.contact_icon{
+    width:2rem;height:2rem;
+}
+.contact_icon_container{
+    width:4rem;height:4rem;display:flex;align-items: center;justify-content: center;background-color: white;border-radius:10rem;
+    transition:all .3s ease-in-out;
+    &:hover{
+        transform:scale(1.2)
+    }
+}
+.up-icon{
+    width:2rem;height:2rem;color:white;transition:all .3s ease-in-out;
+}
+.up-icon-container{
+    width:4rem;height:4rem;display:flex;align-items: center;justify-content: center;cursor:pointer;
+    position: absolute;margin-top:-7rem;margin-left:9.5rem;background-color: $primaryColor;
+    &:hover{
+        .up-icon{
+            transform:scale(1.2)
+        }
+    }
+}
+
+.contact-me-text{
+    color:white;font-family:eurostile, sans-serif;align-self: center;margin-top: 2rem;
+}
+
+.contact-me-sayhi{
+    border:1px solid $primaryColor;width:7rem;height:2rem;display:flex;align-items:center;justify-content: center;
+    border-radius: 9999px;cursor:pointer;transition:all .3s;align-self:center;margin-left:3rem;
+    &_text{
+        color:white;font-family:eurostile, sans-serif;
+    };
+    &:hover{
+        background-color: $primaryColor;
+        .contact-me-sayhi_text{
+            color:white
+        }
+    }
+}

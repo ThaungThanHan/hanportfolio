@@ -24,7 +24,7 @@
     min-width:20rem;min-height:5rem;max-width:40rem;font-family:eurostile, sans-serif;
 }
 .what_i_did{
-    text-decoration: underline;
+    text-decoration: underline;font-family:eurostile, sans-serif;
 }
 .modal_button{
     border:1px solid $primaryColor;border-radius: 1rem;width:5rem;height:2rem;display:flex;align-items: center;
@@ -35,4 +35,7 @@
             color:white;
         }
     }
+}
+.list-item{
+    font-family:eurostile, sans-serif;
 }
