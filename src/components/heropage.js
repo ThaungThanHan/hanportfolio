@@ -1,15 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./styles/hero.scss"
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import hanlogo from "../assets/images/hanlogo.png";
 import {Link, animateScroll as scroll} from "react-scroll";
-const HeroPage = () => {
-    return(
+import Modal from 'react-modal';
+
+const HeroPage = ({isModalOpen,setParams,params,setIsModalOpen}) => {
+    const customStyles = {
+        content:{
+            width:"20rem",height:"20rem",margin:"0 auto",marginTop:"5rem"
+        }
+    }
+    const handleOnchange = (e) => {
+        console.log("chabef")
+    }
+    return( 
         <div id="heropage" className="Hero_Container">
             <div className="Hero_Header">
                <img src={hanlogo} className="logo"/>
-                <div className="Hero_sayHi">
+                <div onClick={()=>setIsModalOpen(true)} className="Hero_sayHi">
                     <p className="Hero_sayHi_text">Say Hi</p>
                 </div>
             </div>

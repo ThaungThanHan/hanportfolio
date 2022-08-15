@@ -1,11 +1,19 @@
 import React from "react";
 import "./styles/Footer.scss"
+import "./styles/hero.scss"
 import Facebook from "../assets/images/facebook.svg"
 import Github from "../assets/images/github.svg"
 import Linkedin from "../assets/images/linkedin.svg"
 import { FaHandPointUp } from "react-icons/fa";
 import {Link, animateScroll as scroll} from "react-scroll";
-const Footer = () => {
+
+
+const Footer = ({isModalOpen,setIsModalOpen}) => {
+    const customStyles = {
+        content:{
+            width:"20rem",height:"20rem",margin:"0 auto",marginTop:"5rem"
+        }
+    }
     return (
         <div className="footer-container">
             <div className="footer-body">
@@ -27,7 +35,7 @@ const Footer = () => {
                 <a href="https://linkedin.com/in/thaung-than-h-658b57118"><div className="contact_icon_container"><img className="contact_icon" src={Linkedin} /></div></a>
                 </div>
                 <p className="contact-me-text">You can find me on these platforms. Interested in working together for awesome projects?</p>
-                <div className="contact-me-sayhi"><p className="contact-me-sayhi_text">Contact me</p></div>
+                <div onClick={()=>setIsModalOpen(true)} className="contact-me-sayhi"><p className="contact-me-sayhi_text">Contact me</p></div>
             </div>
         </div>
     )
