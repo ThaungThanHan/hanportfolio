@@ -21,7 +21,7 @@
 }
 
 .content-work{
-    min-width:20rem;min-height:5rem;max-width:40rem;font-family:eurostile, sans-serif;
+    min-width:20rem;min-height:5rem;max-width:40rem;font-family:eurostile, sans-serif;margin-bottom:5rem;
 }
 .what_i_did{
     text-decoration: underline;font-family:eurostile, sans-serif;
@@ -32,10 +32,23 @@
     &:hover{
         background-color: $primaryColor;
         .modal_button_text{
-            color:white;
+            color:white;font-family:eurostile, 
+        }
+        .work_links{
+            text-decoration: none;color:white;font-family:eurostile, 
         }
     }
 }
 .list-item{
-    font-family:eurostile, sans-serif;
+    font-family:eurostile, sans-serif;margin-bottom:0.5rem;
+}
+.buttons_container{
+    display:flex;flex-direction: row;justify-content: space-around;width:20rem;
+}
+
+.work_links{
+    text-decoration: none;color:$darkColor;font-family:eurostile, 
+}
+.modal_button_text{
+    font-family:eurostile, 
 }

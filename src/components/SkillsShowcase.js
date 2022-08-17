@@ -52,9 +52,9 @@ const SkillsShowcase = () => {
                         </div>
                     </div>
                     <div className="skill_item_right_rightcards">
-                        <p className="skill_item_title">Experience in work plus training</p>
+                        <p className="skill_item_title">Job Experience</p>
                         <div className="skill_item_skills">
-                        <SkillsCards lngtext="4 years" />
+                        <SkillsCards lngtext="1 year" />
                         </div>
                     </div>
                 </div>

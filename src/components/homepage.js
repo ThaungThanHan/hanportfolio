@@ -50,7 +50,7 @@ const HomePage = () => {
                     <input name="from_name" className="sayHi_formcontainer_input" placeholder="Enter your name" />
                     <p className="sayHi_formlabel">Email Address</p>
                     <input name="email" className="sayHi_formcontainer_input" placeholder="Enter your email" />
-                    <p className="sayHi_formlabel">Content</p>
+                    <p className="sayHi_formlabel">Message</p>
                     <textarea name="message"  className="sayHi_formcontainer_input" placeholder="Enter what you want to say" />
                     <div className="say_formcontainer_button_container">
                     <div onClick={()=>setIsModalOpen(false)} className="say_formcontainer_cancel_button">

@@ -2,10 +2,11 @@ import React,{useState} from "react";
 import "./styles/WorkShowcase.scss"
 import lattwae from "../assets/images/lattwae.png"
 import pedagogy from "../assets/images/pedagogy.png"
+import moviedb from "../assets/images/moviedb.png"
 import WorksCards from "./WorksCards";
 import WorkInfoModal from "./WorkInfoModal";
 const WorkShowcase = () => {
-    const images = {lattwae:lattwae,pedagogy:pedagogy};
+    const images = {lattwae:lattwae,pedagogy:pedagogy,moviedb:moviedb};
     const [isModalOpen,setIsModalOpen] = useState({
         lattwae:false,
         pedagogy:false
@@ -27,6 +28,8 @@ const WorkShowcase = () => {
                     image={lattwae} title="Instructed a ReactJS beginner class using LIVE coding." />
                     <WorksCards onPressWorkCard={onPressWorkCard} image={pedagogy} press="pedagogy" 
                     title="Worked on a mobile application for school service using react native and reactjs." />
+                    <WorksCards onPressWorkCard={onPressWorkCard} image={moviedb} press="moviedb" 
+                    title="Movie database website using moviedb API and Reactjs" />
                 </div>
             </div>
             <WorkInfoModal onPressClose={onPressClose} isModalOpen={isModalOpen} images={images} />

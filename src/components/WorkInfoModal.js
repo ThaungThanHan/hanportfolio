@@ -37,7 +37,7 @@ const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
                 <div className="content-container">
                     <img className="content-img" src={images.pedagogy} />
                     <p className="content-work">
-                        Pedagogy is one of the projects by a singapore-based company. With Pedagogy, teacher will be able to tackle their daily school 
+                        Pedagogy is one of the projects by a singapore-based company. With Pedagogy, teachers will be able to tackle their daily school 
                         tasks with all in one solution.<br/> It provides features such as tracking classrooms, LIVE video classrooms, whiteboards, attendance, parent-teacher-students 
                         chat, schedules, academic calendars and leave/proxy requests.
                     </p>
@@ -49,6 +49,30 @@ const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
                     </ul>
                     <div onClick={()=>onPressClose("pedagogy")} className="modal_button">
                         <p className="modal_button_text">Close</p>
+                    </div>
+                </div>
+            </Modal>
+            <Modal 
+            isOpen={isModalOpen.moviedb} style={customStyles}
+            >
+                <div className="content-container">
+                    <img className="content-img" src={images.moviedb} />
+                    <p className="content-work">
+                        The Movie Database (TMDB) is a community built movie and TV database. They offer free-to-use API for people interested in using their movie, shows or 
+                        images and data in our application. It is a system they provide for us to programmatically fetch and use their data and images.
+                    </p>
+                    <h3 className="what_i_did">What I did</h3>
+                    <ul>
+                        <li className="list-item">Develop a website which can provide information regarding people's favourite movies and shows using TMDB api.</li>
+                        <li className="list-item">Created own website design using Figma and developed as per design.</li>
+                    </ul>
+                    <div className="buttons_container">
+                        <div onClick={()=>onPressClose("moviedb")} className="modal_button">
+                            <p className="modal_button_text"><a className="work_links" href="https://thaungthanhan.github.io/moviedb/" target="_blank" >View Demo</a></p>
+                        </div>
+                        <div onClick={()=>onPressClose("moviedb")} className="modal_button">
+                            <p className="modal_button_text">Close</p>
+                        </div>
                     </div>
                 </div>
             </Modal>
