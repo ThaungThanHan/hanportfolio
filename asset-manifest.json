@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43c7fb4e.css",
+    "main.js": "/static/js/main.ebe3d503.js",
+    "static/media/thaung.jpg": "/static/media/thaung.af1fa6cc84ba6851dd40.jpg",
+    "static/media/moviedb.png": "/static/media/moviedb.ab11d685990fd99f455d.png",
+    "static/media/lattwae.png": "/static/media/lattwae.6ec2e37e2d7699448d4f.png",
+    "static/media/sql.png": "/static/media/sql.6e3b437b001f0926be0d.png",
+    "static/media/react.png": "/static/media/react.4cf04f51f65b521114ee.png",
+    "static/media/EurostileBold.ttf": "/static/media/EurostileBold.f46703783c3d654f12e7.ttf",
+    "static/media/pedagogy.png": "/static/media/pedagogy.e09a9769e9636eddc5c4.png",
+    "static/media/php.png": "/static/media/php.39316cc9ed39a148f59f.png",
+    "static/media/css.png": "/static/media/css.f7b5348d00a401c9e087.png",
+    "static/media/firebase.png": "/static/media/firebase.4f32305e7346a179b265.png",
+    "static/media/reactnative.png": "/static/media/reactnative.99e0f5be59c5e8b8d03c.png",
+    "static/media/html5.png": "/static/media/html5.33e740cd0f67f574d782.png",
+    "static/media/design.png": "/static/media/design.0fdf2565565c53a85951.png",
+    "static/media/js.png": "/static/media/js.5e71bf5a89e8e908d4f6.png",
+    "static/media/laravel.png": "/static/media/laravel.6d61dab08a655de043f7.png",
+    "static/media/docker.png": "/static/media/docker.64a53ce8b65ebdf0921a.png",
+    "static/media/sass.png": "/static/media/sass.28c59ea911d9e8072ca5.png",
+    "static/media/jquery.png": "/static/media/jquery.a96a445e1f5b0a2edf72.png",
+    "static/media/hanlogo.png": "/static/media/hanlogo.50ab0c8c42e0f8dda94a.png",
+    "static/media/github.svg": "/static/media/github.c57108f56cb8321f6bdf6da0e774f646.svg",
+    "static/media/facebook.svg": "/static/media/facebook.ddd975a67420c3008da3979403d08231.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.9c537f31af3925b5887b468a4cb7836f.svg",
+    "main.43c7fb4e.css.map": "/static/css/main.43c7fb4e.css.map",
+    "main.ebe3d503.js.map": "/static/js/main.ebe3d503.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43c7fb4e.css",
+    "static/js/main.ebe3d503.js"
+  ]
+}
