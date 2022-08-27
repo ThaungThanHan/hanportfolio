@@ -52,3 +52,9 @@
 .modal_button_text{
     font-family:eurostile, 
 }
+.modal_hyperlink{
+    color:$primaryColor;text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}

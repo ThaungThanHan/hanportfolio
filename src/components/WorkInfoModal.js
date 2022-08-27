@@ -1,5 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import Modal from 'react-modal';
+import ReactPlayer from 'react-player'
+import coinVideo from "../assets/videos/cropped-watchthecoinsdemo.mp4"
 import "./styles/WorkInfoModal.scss";
 const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
     const customStyles = {
@@ -8,6 +10,9 @@ const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
             marginTop:"2rem",
     }
 }
+    const [videodemoenabled,setVideoDemoEnabled] = useState({
+        watchthecoins:false
+    })
     return(
         <div>
             <Modal
@@ -76,6 +81,43 @@ const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
                     </div>
                 </div>
             </Modal>
+
+            <Modal 
+            isOpen={isModalOpen.watchthecoins} style={customStyles}
+            >
+                <div className="content-container">
+                    <img className="content-img" src={images.watchthecoins} />
+                    {!videodemoenabled.watchthecoins ?
+                    <>
+                    <p className="content-work">
+                        CoinLore provides a free cryptocurrency API that doesn't need api keys and is available publicly.<br></br>
+                        As an independent data aggregator, it includes more than 10731 coins, 400+ exchanges.<br/>
+                        You can check out the full code in <a target="_blank" className="modal_hyperlink" href="https://github.com/ThaungThanHan/watchthecoins">this repository.</a>
+                    </p>
+                    <h3 className="what_i_did">What I did</h3>
+                    <ul>
+                        <li className="list-item">Build a react-native app where users can track famous coins such as BTC, ETH, SOL, BNB and USDT using CoinLore API.</li>
+                        <li className="list-item">The app designed to showcase API integration and redux methods.</li>
+                    </ul></> :
+                    <ReactPlayer style={{marginBottom:"2rem",marginTop:"1rem"}} controls="true" width="20rem" height="25rem" url={coinVideo} /> }
+                    <div className="buttons_container">
+                       {!videodemoenabled.watchthecoins ?
+                        <div onClick={()=>setVideoDemoEnabled({...videodemoenabled,watchthecoins:true})} className="modal_button">
+                        <p className="modal_button_text">View Demo</p>
+                        </div>
+                        :
+                        <div onClick={()=>setVideoDemoEnabled({...videodemoenabled,watchthecoins:false})} className="modal_button">
+                        <p className="modal_button_text">Go Back</p>
+                        </div>
+                        }
+
+                        <div onClick={()=>onPressClose("watchthecoins")} className="modal_button">
+                            <p className="modal_button_text">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </Modal>
+
         </div>
     )
 }

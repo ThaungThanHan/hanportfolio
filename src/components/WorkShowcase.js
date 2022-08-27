@@ -3,10 +3,11 @@ import "./styles/WorkShowcase.scss"
 import lattwae from "../assets/images/lattwae.png"
 import pedagogy from "../assets/images/pedagogy.png"
 import moviedb from "../assets/images/moviedb.png"
+import watchthecoins from "../assets/images/watchthecoins.png"
 import WorksCards from "./WorksCards";
 import WorkInfoModal from "./WorkInfoModal";
 const WorkShowcase = () => {
-    const images = {lattwae:lattwae,pedagogy:pedagogy,moviedb:moviedb};
+    const images = {lattwae:lattwae,pedagogy:pedagogy,moviedb:moviedb,watchthecoins:watchthecoins};
     const [isModalOpen,setIsModalOpen] = useState({
         lattwae:false,
         pedagogy:false
@@ -30,6 +31,8 @@ const WorkShowcase = () => {
                     title="Worked on a mobile application for school service using react native and reactjs." />
                     <WorksCards onPressWorkCard={onPressWorkCard} image={moviedb} press="moviedb" 
                     title="Movie database website using moviedb API and Reactjs" />
+                    <WorksCards onPressWorkCard={onPressWorkCard} image={watchthecoins} press="watchthecoins" 
+                    title="Cryptocurrency tracking app written in React Native" />
                 </div>
             </div>
             <WorkInfoModal onPressClose={onPressClose} isModalOpen={isModalOpen} images={images} />
