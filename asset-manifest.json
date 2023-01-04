@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hanportfolio/static/css/main.eca2926f.css",
-    "main.js": "/hanportfolio/static/js/main.e5dbeb2b.js",
+    "main.css": "/hanportfolio/static/css/main.3b96d4e1.css",
+    "main.js": "/hanportfolio/static/js/main.f9afc66a.js",
     "static/media/thaung.jpg": "/hanportfolio/static/media/thaung.af1fa6cc84ba6851dd40.jpg",
     "static/media/moviedb.png": "/hanportfolio/static/media/moviedb.ab11d685990fd99f455d.png",
     "static/media/cropped-watchthecoinsdemo.mp4": "/hanportfolio/static/media/cropped-watchthecoinsdemo.802cdbad9022049f2646.mp4",
@@ -27,11 +27,11 @@
     "index.html": "/hanportfolio/index.html",
     "static/media/facebook.svg": "/hanportfolio/static/media/facebook.ddd975a67420c3008da3979403d08231.svg",
     "static/media/linkedin.svg": "/hanportfolio/static/media/linkedin.9c537f31af3925b5887b468a4cb7836f.svg",
-    "main.eca2926f.css.map": "/hanportfolio/static/css/main.eca2926f.css.map",
-    "main.e5dbeb2b.js.map": "/hanportfolio/static/js/main.e5dbeb2b.js.map"
+    "main.3b96d4e1.css.map": "/hanportfolio/static/css/main.3b96d4e1.css.map",
+    "main.f9afc66a.js.map": "/hanportfolio/static/js/main.f9afc66a.js.map"
   },
   "entrypoints": [
-    "static/css/main.eca2926f.css",
-    "static/js/main.e5dbeb2b.js"
+    "static/css/main.3b96d4e1.css",
+    "static/js/main.f9afc66a.js"
   ]
 }
